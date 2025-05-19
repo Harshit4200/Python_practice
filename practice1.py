@@ -1,3 +1,4 @@
+import random
 # Q1
 # num1=int(input("enter first number:"))
 # num2=int(input("enter second number:"))
@@ -120,15 +121,131 @@
 # for i in range(1,num+1):
 #     fact*=i
 # print(fact)
-n=int(input("enter the number whose table you want  to print"))
-for i in range(1,n):
-    for j in range(1,n):
-        if(j<n-i):
-            print(" ",end="")
-        else:
-            print("*",end="")
-    
-    print("\n")
+# n=int(input("enter the number whose table you want  to print"))
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         if(j<n-i+1):
+#             print(" ",end="")
+#         else:
+#             print("*",end="")
+#     for k in range(1,n+1):
+#         if(k<i):
+#             print("*",end="")
+#     print("\n")
 # num=int(input("enter the number whose table you want  to print"))
 # for i in range(10,1,-1):
 #     print(f"{num}*{i}={num*i}")
+
+# n=int(input("enter the number whose table you want  to print"))
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         if(i==1 or i==n):
+#             print("*",end="")
+#         elif(not(j==1 or j==n)):
+            #  print(" ",end="")
+#         else:
+#             print("*",end="")
+#     print("\n")
+# def greatest(n1,n2,n3):
+#     if(n1>n2 and n1>n3):
+#         return n1
+#     if(n2>n1 and n2>n3):
+#         return n2
+#     if(n3>n2 and n3>n1):
+#         return n3
+
+# great=greatest(232,3,53)
+
+
+# def celtofah(cel):
+#     fahrenheit=(cel*1.8)+32
+#     return fahrenheit
+
+# print(celtofah(20))
+
+# def sumofn(n):
+#     if(n==1):
+#         return 1
+#     return n+sumofn(n-1)
+
+# print(sumofn(5))
+
+# def inchtocm(inch):
+#     return inch*2.54
+
+# print(inchtocm(6))
+
+# def pattern(n):
+#     for i in range(n,0,-1):
+#         for j in range(i):
+#             print("*",end="")
+#         print()
+
+# pattern(4)
+
+# f= open("poems.txt","r")
+# data=f.read()
+# if("twinkle" in data):
+#     print("yes")
+# else:
+#     print("NO")
+# f.close()
+
+# def game():
+#     return random.randint(1,100)
+# score=game()
+
+# with open("hi-score.txt","r+") as file:
+#     data = file.read()
+#     if data=="":
+#         file.write(str(score))
+#     else:
+#         if(int(data)<=score):
+#             file.seek(0)
+#             file.write(str(score))
+#         else:
+#             pass
+
+
+
+
+
+# for i in range(2,21):
+#     f=open(f"13-year-old/table{i}.txt","w")
+#     for j in range(1,11):
+#         f.write(f"{i}*{j}={i*j}\n")
+#     f.close()
+    
+
+# with open("don.txt","r+") as f:
+#     data=f.read()
+#     data =data.lower()
+#     f.seek(0)
+#     if "donkey" in data:
+#         f.write(data.replace("donkey","#####"))
+#         f.truncate()
+#     else:
+#         print("no donkey")
+        
+
+# with open("don.txt","r+") as f:
+#     data=f.read()
+# with open("copy.txt","r+") as f1:
+#     data1=f1.read()
+# if data==data1:
+#     print("both files are identical")
+# else:
+#     print("not identical")
+    
+# with open("copy.txt","w") as f:
+#     f.truncate()
+
+# import os
+# files=os.listdir("/")
+# print(files)
+# for items in files:
+#     if ".log" in items:
+#         with open(str(items),"r") as f:
+#             data = f.read()
+#             if "python" in data:
+#                 print("yes")
