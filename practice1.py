@@ -249,3 +249,49 @@ import random
 #             data = f.read()
 #             if "python" in data:
 #                 print("yes")
+
+
+def isprime(num):
+    for i in range(2,num,1):
+        if(num%i==0):
+            return False
+    return True
+
+num=7
+print(isprime(num))
+
+def secondmaxunique(listint):
+    set1=set(list)
+    print(set1)
+    secondmax=0
+    max=0
+    for i in set1:
+        if(i>=max):
+            secondmax=max
+            max=i
+    return secondmax
+
+
+
+list=[23,34,46,2,343,5,23,2,21,354,688,8584,54,43]
+print(secondmaxunique(list))
+
+sentence  = "hi my name is harshit j ddcdvain and i am a developer"
+l1=[ i for i in sentence.split(" ") if len(i)>4]
+print(l1)
+
+# l2=len([ i for i in sentence.split("") if i in "aeiou"])
+# print(l2)
+
+
+students = {'Alice': 82, 'Bob': 65, 'Charlie': 91, 'David': 73}
+
+for i in students.values():
+    sum=+i
+
+avg=sum/len(students)
+
+for i in students.values():
+    if i>avg:
+        print(students[i])
+
